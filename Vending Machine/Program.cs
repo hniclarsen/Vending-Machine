@@ -9,17 +9,13 @@ namespace Vending_Machine
     {
       var vendingMachine = new Vending_Machine();
 
-      var products = new Dictionary<Product, string>();
       var coke = new Product("Coke", ProductCategory.Beverage, 1.25);
       var pepsi = new Product("Pepsi", ProductCategory.Beverage, 1.00);
       var drPepper = new Product("Dr Pepper", ProductCategory.Beverage, 1.25);
 
       vendingMachine.AddProduct(coke, 25);
-      products.Add(coke, coke.name);
       vendingMachine.AddProduct(pepsi, 35);
-      products.Add(pepsi, pepsi.name);
       vendingMachine.AddProduct(drPepper, 45);
-      products.Add(drPepper, drPepper.name);
       
       Console.WriteLine("Please insert money into the machine then make your selection.");
       Console.WriteLine("For more information, type `help`.");

@@ -6,7 +6,7 @@
     public readonly ProductCategory type;
     public double Price { get; set; }
 
-    public Product(string name, ProductCategory type = ProductCategory.Unclassified, double price = 0.00)
+    public Product(string name, ProductCategory type, double price = 0.00)
     {
       this.name = name;
       this.type = type;

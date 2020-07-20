@@ -6,8 +6,7 @@ namespace Vending_Machine
 {
   public enum ProductCategory
   {
-    Unclassified,
     Beverage,
-    Chips
+    Food
   }
 }
